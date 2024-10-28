@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  background-color: secondary-color;
+}
+.logo__img {
+  width: 200px;
+}
+
+.nav {
+  width: 100%;
+  display: block;
+}
+
+/*# sourceMappingURL=header.css.map */

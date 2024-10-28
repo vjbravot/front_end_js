@@ -1,0 +1,32 @@
+.section__title {
+  text-align: center;
+}
+.section__text {
+  text-align: center;
+}
+.section__post__title {
+  text-align: left;
+}
+.section__post__text {
+  text-align: left;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+.team__member__name {
+  text-align: center;
+}
+.team__member__img {
+  width: 300px;
+}
+
+.section__post__image {
+  display: block;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*# sourceMappingURL=main.css.map */

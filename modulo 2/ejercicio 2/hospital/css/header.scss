@@ -1,0 +1,17 @@
+$primary-color: blue;
+$secondary-color: white;
+$default-margin: 5px;
+
+.logo {
+    display: flex;
+    background-color: secondary-color;
+
+    &__img {
+        width: 200px;
+    }
+}
+
+.nav {
+    width: 100%;
+    display: block;
+}
