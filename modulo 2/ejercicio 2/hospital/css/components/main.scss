@@ -1,0 +1,87 @@
+@use '../module/variables' as *;
+
+
+.section {
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+}
+
+.post {
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__image {
+        align-items: center;
+        display: block;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+.testimony{
+    &__name{
+        text-align: left;
+        font-weight: bold;
+    }
+    &__text{
+        text-align: left;
+    }
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__name {
+        text-align: center;
+    }
+
+    &__img {
+        width: 300px;
+    }
+}
+
+
+
+@media (max-width: $first-break) {
+
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: $second-break) {
+        .team {
+            display: flex;
+            flex-direction: column;
+
+        }  
+}
+
+@media (min-width: $second-break) {
+}
