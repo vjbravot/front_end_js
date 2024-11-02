@@ -1,0 +1,9 @@
+/*  layout */
+@use './layout/header.scss' as *;
+@use './layout/section.scss' as *;
+@use './layout/footer.scss' as *;
+
+/*  components */
+@use './components/team.scss' as *;
+@use './components/testimony.scss' as *;
+@use './components/post.scss' as *;

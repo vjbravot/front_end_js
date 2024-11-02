@@ -1,0 +1,25 @@
+@use '../module/variables.scss' as *;
+
+.footer__container{
+    display:flex;
+    flex-direction: column;
+
+}
+@media (max-width: $first-break) {
+
+}
+
+@media (max-width: $second-break) {
+
+}
+
+@media (min-width: $second-break) {
+    .footer__container{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    
+    }
+
+}
