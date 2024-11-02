@@ -1,0 +1,6 @@
+@use '../module/variables.scss' as *;
+.logo{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}

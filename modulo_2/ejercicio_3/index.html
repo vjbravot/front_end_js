@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Centro Sinapsis</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -16,166 +16,24 @@
       <div class="logo">
         <img class="logo__img" src="img/logo.png" alt="Logo del Hospital" id="logo" />
       </div>
-      <nav class="navbar-brand mb-0 h1">
-        <a class="nav__link nav-item" href="#inicio">Home</a>
-        <a class="nav__link nav-item" href="#equipo-medico">Equipo Médico</a>
-        <a class="nav__link nav-item" href="#servicios">Servicios</a>
-        <a class="nav__link nav-item" href="#contacto">Contacto</a>
-        <a class="nav__link nav-item" href="#Reserva de horas">Reserva de horas</a>
+      <nav class="navbar bg-body-tertiary">
+        <a class="nav-link" href="#inicio">Home</a>
+        <a class="nav-link" href="#equipo-medico">Equipo Médico</a>
+        <a class="nav-link" href="#servicios">Servicios</a>
+        <a class="nav-link" href="#contacto">Contacto</a>
+        <a class="nav-link" href="#Reserva de horas">Reserva de horas</a>
       </nav>
     </div>
   </header>
 
-  <main>
-    <!--     <section class="section">
-      <h2 class="section__title">Bienvenidos</h2>
-      <p class="section__text">
-        Centro Sinapsis les da la más cordial bienvenida. Nuestro centro cuenta con las más modernas instalaciones.
-      </p>
-    </section>
-    <section class="section">
-      <h2 class="section__title">Sobre nuestro equipo</h2>
-      <p class="section__text">
-        Contamos con profesionales altamente calificados para atender todas sus necesidades.
-      </p>
-      
-      <div class="org container">
-        <div class="team col col-lg-6">
-          <h3 class="post__title ">Directores Médicos</h3>
-           <div class="member col col-lg-3">
-            <p class="member__name" > Dr. Cristobal Teuber</p>
-             <img class="member__img" src="img/team/director_1.png" /> 
-          </div>
-          <div class="member col col-lg-3">
-            <p class="member__name"> Dr. Carlos Villarroel</p>
-            <img class="member__img" src="img/team/director_2.png" />
-          </div>
-        </div>
-        <div class="team col col-lg-6">
-          <h3 class="post__title">Tecnólogos Médicos</h3>
-          <div class="member col col-lg-3">
-            <p class="member__name"> Carlos Cisterna</p>
-            <img class="member__img" src="img/team/tecnologo_1.png" />
-          </div>
-          <div class="member col col-lg-3">
-            <p class="member__name"> Marcelo Borg</p>
-            <img class="member__img" src="img/team/tecnologo_2.png" />
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <div class="container">
-      <div class="row">
-        <div class="col">Col 1</div>
-        <div class="col"> Col 2</div>
-      </div>
-      <div class="row">
-        <div class="col">Col 3</div>
-        <div class="col">Col 4</div>
-      </div>
-    </div>
-
-
-    <section class="section">
-      <h2 class="section__title">Servicios Médicos del Centro Sinapsis</h2>
-
-      <article class="post">
-        <img class="post__image" src="img/services/cardiologia.png" alt="Ícono de consulta" />
-        <h3 class="post__title">Consultas Cardiológicas</h3>
-        <p class="post__text">
-          Ofrecemos consultas especializadas con cardiólogos experimentados
-          que evaluarán tu salud cardiovascular, realizarán diagnósticos
-          precisos y diseñarán planes de tratamiento personalizados.
-        </p>
-      </article>
-
-      <article class="post">
-        <img class="post__image" src="img/services/medicina-urgencia.jpg" alt="Ícono de urgencias" />
-        <h3 class="post__title">Urgencias Cardiovasculares</h3>
-        <p class="post__text">
-          Nuestro servicio de urgencias está disponible las 24 horas,
-          brindando atención inmediata y de alta calidad para situaciones
-          críticas relacionadas con la salud del Hyrule.
-        </p>
-      </article>
-
-      <article class="servicios">
-        <img img class="post__image" src="img/services/servicio-cardiologia.jpg" alt="Ícono de especialidades" />
-        <h3 class="post__title">Especialidades en Cardiología</h3>
-        <p class="post__text">
-          Contamos con diversas especialidades, incluyendo
-          electrocardiografía, ecocardiografía y rehabilitación cardíaca, para
-          abordar de manera integral las necesidades de cada paciente.
-        </p>
-      </article>
-    </section>
-
-    <section class="section">
-      <h2 class="section__title">Testimonios de Pacientes</h2>
-
-      <article class="testimony">
-        <p class="testimony__name">María G.</p>
-        <p class="testimony__text">
-          "La atención en el Centro Sinapsis fue excepcional. Desde mi
-          primera consulta hasta la rehabilitación, me sentí apoyada en cada
-          paso. Gracias a su equipo, hoy disfruto de una vida más saludable."
-        </p>
-      </article>
-
-      <article class="testimony">
-        <p class="testimony__name">José L.</p>
-        <p class="testimony__text">
-          "No puedo agradecer lo suficiente al personal del hospital. Su
-          profesionalismo y dedicación me dieron la confianza que necesitaba
-          durante mi tratamiento. Me siento como nuevo y listo para seguir
-          adelante."
-        </p>
-      </article>
-
-      <article class="testimony">
-        <p class="testimony__name">Ana R.</p>
-        <p class="testimony__text">
-          "El Hospital del Hyrule superó mis expectativas. La atención
-          personalizada y el seguimiento constante hicieron toda la diferencia
-          en mi recuperación. ¡Altamente recomendado!"
-        </p>
-      </article>
-
-      <article class="testimony">
-        <p class="testimony__name">Carlos T.</p>
-        <p class="testimony__text">
-          "Tuve una experiencia increíble. El equipo médico no solo es
-          competente, sino también muy empático. Me ayudaron a entender mi
-          condición y a tomar decisiones informadas sobre mi salud."
-        </p>
-      </article>
-    </section>
-
-
-  </main>
-
-  <footer class="footer">
-    <h3 class="footer__title">Centro Médico Sinapsis</h3>
-    <div class="footer__container">
-      <div class="card">
-        <h4 class="card__title">Contacto</h4>
-        <p class="card__text">Teléfono: (+56 65) 243 6345</p>
-        <p class="card__text">Email: info@sinapsispv.cl</p>
-        <p class="card__text">Dirección: Urmeneta 801, Esquina Aníbal Pinto, Puerto Montt</p>
-      </div>
-
-      <div class="card">
-        <h4 class="card__title">Síguenos</h4>
-        <a class="card__text" href="https://www.facebook.com/centrossinapsis" target="_blank">Facebook</a>
-        <a class="card__text" href="https://www.twitter.com/centrosinapsis" target="_blank">Twitter</a>
-        <a class="card__text" href="https://www.instagram.com/centrosinapsis" target="_blank">Instagram</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>&copy; 2024 Centro Médico Sinapsis - Todos los derechos reservados.</p>
-    </div>
-  </footer>
+<!-- <div class="container">
+  <div class = "row">
+    <div class = "col-md-12 col-lg-6">row1 Col1</div>
+    <div class = "col-md-12 col-lg-6">row1 Col2</div>
+  </div> -->
+<!--     <div class = "col col-xs-12 col-md-6">row2 Col1</div>
+    <div class = "col col-xs-12 col-md-6">row2 Col1</div> -->
+</div>
 </body>
 
 </html>

@@ -1,31 +1,4 @@
 @use '../module/variables.scss' as *;
-
-.logo {
-    display: flex;
-    background-color: $secondary-color;
-
-    &__img {
-        width: 200px;
-    }
-}
-
-.nav {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-}
-
-@media (max-width: $first-break) {
-    .logo{
-        justify-content: center;
-    }
-    .nav{
-        justify-content: center;
-    }
-}
-
-@media (max-width: $second-break) {
-}
-
-@media (min-width: $second-break) {
+.banner{
+    margin:20px;
 }

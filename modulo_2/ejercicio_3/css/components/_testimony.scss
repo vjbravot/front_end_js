@@ -1,12 +1,2 @@
 @use '../module/variables' as *;
 
-
-.testimony{
-    &__name{
-        text-align: left;
-        font-weight: bold;
-    }
-    &__text{
-        text-align: left;
-    }
-}
