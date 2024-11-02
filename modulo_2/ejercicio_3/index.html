@@ -14,9 +14,9 @@
 </head>
 
 <body>
-  <header>
-    <div class="banner">
-      <div class="logo">
+  <header class="container">
+    <div class="banner row">
+      <div class="logo col-12">
         <img class="logo__img" src="img/logo.png" alt="Logo del Hospital" id="logo" />
       </div>
       <nav class="navbar bg-body-tertiary">
@@ -29,11 +29,19 @@
     </div>
   </header>
 
+  <div class="spaceforlogo"> </div>
+
   <section class="section">
-    <h2 class="section__title">Bienvenidos</h2>
-    <p class="section__text">
-      Centro Sinapsis les da la más cordial bienvenida. Nuestro centro cuenta con las más modernas instalaciones.
-    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="section__title">Bienvenidos</h2>
+          <p class="section__text">
+            Centro Sinapsis les da la más cordial bienvenida. Nuestro centro cuenta con las más modernas instalaciones.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>
@@ -46,11 +54,11 @@
             </div>
             <div class="row">
               <div class="member col-md-12 col-lg-6">
-                <p class="member__name"> Dr. Cristobal Teuber</p>
+                <b class="member__name"> Dr. Cristobal Teuber</b>
                 <img class="member__img" src="img/team/director_1.png" />
               </div>
               <div class="member col-md-12 col-lg-6">
-                <p class="member__name"> Dr. Carlos Villarroel</p>
+                <b class="member__name"> Dr. Carlos Villarroel</b>
                 <img class="member__img" src="img/team/director_2.png" />
               </div>
             </div>
@@ -63,11 +71,11 @@
             </div>
             <div class="row">
               <div class="member col-md-12 col-lg-6">
-                <p class="member__name"> T. Carlos Cisternas</p>
+                <b class="member__name"> T. Carlos Cisternas</b>
                 <img class="member__img" src="img/team/tecnologo_1.png" />
               </div>
               <div class="member col-md-12 col-lg-6">
-                <p class="member__name"> T. Marcelo Borg</p>
+                <b class="member__name"> T. Marcelo Borg</b>
                 <img class="member__img" src="img/team/tecnologo_2.png" />
               </div>
             </div>
@@ -76,14 +84,109 @@
       </div>
     </div>
   </section>
-  <!-- <div class="container">
-  <div class = "row">
-    <div class = "col-md-12 col-lg-6">row1 Col1</div>
-    <div class = "col-md-12 col-lg-6">row1 Col2</div>
-  </div> -->
-  <!--     <div class = "col col-xs-12 col-md-6">row2 Col1</div>
-    <div class = "col col-xs-12 col-md-6">row2 Col1</div> -->
-  </div>
+
+  <section class="section">
+    <h2 class="section__title">Servicios Médicos del Centro Sinapsis</h2>
+    <div class="container">
+      <div class="row">
+        <article class="post col-lg-12 col-xl-4">
+          <img class="post__img" src="img/services/cardiologia.png" alt="Ícono de consulta" />
+          <h3 class="post__title">Consultas Cardiológicas</h3>
+          <p class="post__text">
+            Ofrecemos consultas especializadas con cardiólogos experimentados
+            que evaluarán tu salud cardiovascular, realizarán diagnósticos
+            precisos y diseñarán planes de tratamiento personalizados.
+          </p>
+        </article>
+        <article class="post col-lg-12 col-xl-4">
+          <img class="post__img" src="img/services/medicina-urgencia.jpg" alt="Ícono de urgencias" />
+          <h3 class="post__title">Urgencias Cardiovasculares</h3>
+          <p class="post__text">
+            Nuestro servicio de urgencias está disponible las 24 horas,
+            brindando atención inmediata y de alta calidad para situaciones
+            críticas relacionadas con la salud del Hyrule.
+          </p>
+        </article>
+        <article class="post col-lg-12 col-xl-4">
+          <img img class="post__img" src="img/services/servicio-cardiologia.jpg" alt="Ícono de especialidades" />
+          <h3 class="post__title">Especialidades en Cardiología</h3>
+          <p class="post__text">
+            Contamos con diversas especialidades, incluyendo
+            electrocardiografía, ecocardiografía y rehabilitación cardíaca, para
+            abordar de manera integral las necesidades de cada paciente.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">Testimonios de Pacientes</h2>
+    <div class="container">
+      <div class="row">
+        <article class="testimony col-md-12 col-lg-6">
+          <b class="testimony__name">María G.</b>
+          <p class="testimony__text">
+            "La atención en el Centro Sinapsis fue excepcional. Desde mi
+            primera consulta hasta la rehabilitación, me sentí apoyada en cada
+            paso. Gracias a su equipo, hoy disfruto de una vida más saludable."
+          </p>
+        </article>
+
+        <article class="testimony col-md-12 col-lg-6">
+          <b class="testimony__name">José L.</b>
+          <p class="testimony__text">
+            "No puedo agradecer lo suficiente al personal del hospital. Su
+            profesionalismo y dedicación me dieron la confianza que necesitaba
+            durante mi tratamiento. Me siento como nuevo y listo para seguir
+            adelante."
+          </p>
+        </article>
+
+        <article class="testimony col-md-12 col-lg-6">
+          <b class="testimony__name">Ana R.</b>
+          <p class="testimony__text">
+            "El Hospital del Hyrule superó mis expectativas. La atención
+            personalizada y el seguimiento constante hicieron toda la diferencia
+            en mi recuperación. ¡Altamente recomendado!"
+          </p>
+        </article>
+
+        <article class="testimony col-md-12 col-lg-6">
+          <b class="testimony__name">Carlos T.</b>
+          <p class="testimony__text">
+            "Tuve una experiencia increíble. El equipo médico no solo es
+            competente, sino también muy empático. Me ayudaron a entender mi
+            condición y a tomar decisiones informadas sobre mi salud."
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="container footer">
+    <h3 class="title">Centro Médico Sinapsis</h3>
+    <div class="row">
+      <div class="col col-md-12 col-xl-6">
+        <h4 class="card__title">Contacto</h4>
+        <p class="card__text">Teléfono: (+56 65) 243 6345</p>
+        <p class="card__text">Email: info@sinapsispv.cl</p>
+        <p class="card__text">Dirección: Urmeneta 801, Esquina Aníbal Pinto, Puerto Montt</p>
+      </div>
+
+      <div class="col col-md-12 col-xl-6">
+        <h4 class="card__title">Síguenos</h4>
+        <a class="card__text" href="https://www.facebook.com/centrossinapsis" target="_blank">Facebook</a>
+        <a class="card__text" href="https://www.twitter.com/centrosinapsis" target="_blank">Twitter</a>
+        <a class="card__text" href="https://www.instagram.com/centrosinapsis" target="_blank">Instagram</a>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <p>&copy; 2024 Centro Médico Sinapsis - Todos los derechos reservados.</p>
+    </div>
+  </footer>
 </body>
 
 </html>

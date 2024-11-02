@@ -1,16 +1,41 @@
+/* module */
 /*  layout */
-.banner {
-  margin: 20px;
+.section {
+  margin-top: 50px;
 }
-
 .section__title {
   text-align: center;
+  margin-bottom: 50px;
 }
 .section__text {
   text-align: justify;
 }
+.section__title {
+  color: #154ea5;
+  font-size: 36px;
+  text-align: center;
+}
 
 .team__name {
+  text-align: center;
+  color: #00b6e7;
+  font-size: 24px;
+  text-align: center;
+}
+
+.spaceforlogo {
+  padding: 100px;
+}
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #154ea5;
+  font-size: 36px;
+  text-align: center;
+}
+
+.bottom {
   text-align: center;
 }
 
@@ -22,13 +47,26 @@
   max-width: 250px;
 }
 
-banner {
-  position: fixed;
+.post__img {
+  max-width: 300px;
+  text-align: center;
 }
-banner .logo {
-  display: flex;
+.post__title {
+  color: #00b6e7;
+  font-size: 24px;
+  text-align: center;
+}
+
+.banner {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
   justify-content: center;
-  max-width: 100%;
+}
+.banner .navbar {
+  width: 90%;
 }
 
 /*# sourceMappingURL=styles.css.map */
