@@ -1,1 +1,10 @@
 @use '../module/variables' as *;
+
+.section{
+    &__title{
+        text-align: center;
+    }
+    &__text{
+        text-align: justify;
+    }
+}

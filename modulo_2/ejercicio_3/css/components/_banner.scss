@@ -1,6 +1,8 @@
 @use '../module/variables.scss' as *;
+banner{
+    position: fixed;
 .logo{
     display: flex;
     justify-content: center;
     max-width: 100%;
-}
+}}
