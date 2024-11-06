@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Prueba</title>
+    <link rel="stylesheet" type="text/css" href="../dist/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">      
+</head>
+<body class="body-mio">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../assets/img/logo-blanco-horizontal.png" alt="Logo hospital" width="231" height="69">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/equipo.html">Equipo médico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <a href="/pages/contacto.html" class="d-flex">
+            <button type="button" class="btn btn-outline-success btn-custom">Agendar hora</button> 
+            </a>
+        </div>
+    </div>
+</nav>
+    <section id="banner-contacto" class="banner">
+        <div class="banner__content">
+            <h1 class="banner__titulo">Ponte en contacto con nosotros</h1>
+            <p class="banner__bajada">Si necesitas ayuda no dudes en escribirnos.</p>
+            <a href="#" class="banner__boton">Reserva tu hora</a>
+        </div>
+    </section>
+    <section>
+        <div class="mision">
+            <div class="mision__left">
+                <h2 style="text-decoration: underline; text-decoration-color: #64ebb6;">Formulario de Contacto</h2>
+                <p>En caso de dudas, sugerencias o reclamos, escríbenos en el siguiente formulario y nos comunicaremos contigo a la brevedad</p>
+                <img src="../assets/img/mapa.png" alt="Mapa">
+            </div>
+            <div class="mision__right">
+                <form class="formulario">
+                    <div class="formulario__campos">
+                      <label class="formulario__label" for="name">Nombre</label>
+                      <input class="formulario__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    </div>
+                  
+                    <div class="formulario__campos">
+                      <label class="formulario__label" for="email">Correo</label>
+                      <input class="formulario__input" type="email" id="email" name="email" placeholder="Tu correo" required>
+                    </div>
+                  
+                    <div class="formulario__campos">
+                      <label class="formulario__label" for="phone">Teléfono</label>
+                    </div>
+                    <input class="formulario__input" type="tel" id="phone" name="phone" placeholder="Tu teléfono">
+                  
+                    <div class="formulario__campos">
+                      <label class="formulario__label" for="message">Mensaje</label>
+                      <textarea class="formulario__textarea" id="message" name="message" rows="4" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                  
+                    <button class="formulario__boton" type="submit">Enviar</button>
+                  </form>
+                  
+            </div>
+        </div>           
+    </section>
+
+    <footer>
+   
+      <div class="footer__contenedor">
+        <!-- Logo -->
+        <div class="footer__logo">
+          <a href="index.html"></a>
+          <img src="../assets/img/logo-blanco-vertical.png" alt="Logo">
+        </div>
+    
+        <!-- Enlaces rápidos -->
+        <div class="footer__links">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Equipo médico</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+    
+        <!-- Información de contacto -->
+        <div class="footer__contacto">
+          <h4>Contacto</h4>
+          <p><i class="fa fa-phone"></i> +56 9 1234 5678</p>
+          <p><i class="fa fa-envelope"></i> info@hospitalcordis.cl</p>
+          <p><i class="fa fa-map-marker"></i> Calle Falsa 123, Santiago, Chile</p>
+        </div>
+    
+        <!-- Redes sociales -->
+        <div class="footer__social">
+          <h4>Síguenos</h4>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+  </footer>
+</html>

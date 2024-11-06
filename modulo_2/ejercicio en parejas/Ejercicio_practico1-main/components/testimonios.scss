@@ -1,0 +1,13 @@
+//Seccion testimonios
+
+.testimonios__columna{
+    margin-left: 60px;
+}
+
+@media (max-width: 848px){
+    .testimonios__columna{
+        margin: 5px;
+        text-align: center;
+    }
+    
+}

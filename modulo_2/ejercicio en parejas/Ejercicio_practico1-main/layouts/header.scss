@@ -1,0 +1,46 @@
+/*Sección navbar*/
+@use '../styles/variables.scss' as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+nav.navbar {
+    background-color: $color-secundario;
+  }
+  
+.navbar-nav .nav-link {
+    color: $color-principal;  
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+
+    &:hover {
+        color: #f1f1f1;  
+    }
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffffff; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.btn.btn-outline-success.btn-custom  {
+    background-color: $color-enfasis; 
+    border-color: $color-terciario; 
+    color: white; 
+    border-radius: 32px; 
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+ 
+    a.btn.btn-outline-success.btn-custom {
+        text-decoration: none !important;
+    }
+    
+    
+    &:hover {
+      background-color: darken($color-terciario, 10%); // Color de fondo en hover
+      border-color: darken($color-secundario, 10%); // Color del borde en hover
+    }
+  }
+  
+
+
+  

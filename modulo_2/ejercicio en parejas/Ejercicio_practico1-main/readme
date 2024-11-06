@@ -1,0 +1,37 @@
+Ejercicio práctico 3
+--------------------
+
+Ejercicio Práctico: Desarrollo de la Página Web de un Hospital
+
+Descripción del Proyecto
+--------------------------
+
+* Este proyecto consiste en la creación de un sitio web modularizado para un hospital ficticio, usando SASS para organizar y estructurar los estilos CSS de manera eficiente. La modularización facilita el mantenimiento, la escalabilidad del código y permite la reutilización de componentes comunes en varias páginas del sitio.
+
+Implementación de la Modularización de Estilos y Media Queries
+---------------------------------------------------------------
+
+* Modularización de Estilos: Cada sección de la página (como la cabecera, el pie de página, la navegación y las tarjetas) está separada en archivos SASS individuales. Esto permite trabajar en cada componente por separado sin interferir con otros.
+
+* Media Queries: Las consultas de media (media queries) se implementaron en cada componente donde eran necesarias, en lugar de centralizarlas todas en un archivo. Así, cada archivo SASS contiene las adaptaciones específicas para la pantalla de cada componente, manteniendo el código más ordenado y fácil de localizar.
+
+* Integración Boostrap: Se integró Bootstrap en el proyecto para mejorar la responsividad de la página y facilitar la implementación de componentes dinámicos. A continuación se detallan las secciones que se personalizaron utilizando Bootstrap:
+
+* Navbar: Se utilizó la estructura de Bootstrap para el menú de navegación, adaptándolo a la línea gráfica del hospital. La barra de navegación es completamente responsiva, y sus colores, tipografía y espaciado fueron personalizados para coincidir con el diseño establecido.
+
+* Tarjetas: Las tarjetas para mostrar información de los servicios también se construyeron usando clases de Bootstrap. Estas se personalizaron con CSS para ajustar colores, bordes y sombras, logrando un estilo acorde a la identidad visual del hospital y asegurando que se adapten a cualquier tamaño de pantalla.
+
+* Botones: Se utilizaron botones de Bootstrap en diversas partes del sitio, incluyendo llamados a la acción para "Reservar cita" y "Contactar". Los botones fueron estilizados para que cumplan con el esquema de colores del hospital y se mantengan accesibles y visibles en todos los dispositivos.
+
+* Cada componente de Bootstrap fue ajustado para alinearse con la línea gráfica del hospital, utilizando una combinación de variables SASS y estilos personalizados. Esto asegura que el diseño sea coherente y que el sitio refleje la identidad profesional y confiable del hospital.
+
+Instrucciones para Visualizar el Proyecto
+--------------------------------------------
+1- Instalación de Dependencias: Asegúrate de tener SASS instalado globalmente en tu entorno:
+* npm install -g sass
+
+2- Compilación del Código SASS: Ejecuta el siguiente comando desde la carpeta raíz del proyecto para compilar los archivos SASS:
+* sass --watch styles/main.scss:dist/estilo.css
+
+3- Visualización en Navegador: 
+* Abre el archivo index.html en tu navegador web buscando el archivo index.html en la carpeta pages.

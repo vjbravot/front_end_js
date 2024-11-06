@@ -1,0 +1,53 @@
+  /* Sección formulario de contacto */
+  @use '../styles/variables.scss' as *;
+
+  .formulario {
+    max-width: 400px;
+    margin: 0 auto; /* Centrar el formulario */
+    padding: 20px;
+    border: 2px solid $color-terciario; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    background-color: #f9f9f9;
+    margin-top: 100px;
+  }
+  
+  /* Estilo de los campos de entrada */
+  .formulario__campos {
+    margin-bottom: 15px;
+  }
+  
+  .formulario__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .formulario__input,
+  .formulario__textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid $color-terciario; /* Borde con color especificado */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que padding no afecte el ancho */
+    background-color: #fff;
+    resize: none; /* Evita que el textarea se redimensione */
+  }
+  
+  .formulario__boton {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: $color-terciario;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario__boton:hover {
+    background-color: #52dca0; 
+  }

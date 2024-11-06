@@ -1,0 +1,14 @@
+//variables globales
+
+@use 'variables' as *;
+@use '../base/base.scss';
+@use '../layouts/header.scss';
+@use '../components/banner.scss';
+@use '../components/mision.scss';
+@use '../components/tarjetas.scss';
+@use '../components/carrusel.scss';
+@use '../components/testimonios.scss';
+@use '../layouts/footer.scss';
+@use '../components/formulario.scss';
+@use '../components/medicos.scss';
+@use '../node_modules/bootstrap/scss/bootstrap.scss';

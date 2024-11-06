@@ -1,0 +1,61 @@
+/* Seccion carousel de testimonios */
+@use '../styles/variables.scss' as *;
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.testimonial__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.testimonial__img:hover {
+    transform: translateY(-5px); 
+}
+
+.testimonial__nombre {
+    font-size: 20px;
+    color: $color-enfasis; 
+    margin-bottom: 10px;
+}
+
+.testimonial__descripcion {
+    font-size: 16px;
+    color: #333;
+    font-style: italic;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.testimonial-item{
+    margin: 0 10px;
+}
+
+/*Seccion responsive*/
+@media (max-width: 848px){
+     
+    .testimonial {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        max-width: 600px; 
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    .testimonial-item{
+        margin: 0 10px; /* Espacio entre las tarjetas */
+        padding: 10px;
+       
+    }
+  }

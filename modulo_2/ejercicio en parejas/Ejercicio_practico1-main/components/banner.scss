@@ -1,0 +1,74 @@
+/* Sección Banner */
+@use '../styles/variables.scss' as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+.banner{
+    background-size: cover; /* La imagen cubre toda la sección */
+    background-position: center; /* Centrar la imagen */
+    height: 100vh; /* El banner ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    color: white; /* Color de texto */
+    text-align: center; /* Texto centrado */
+    position: relative; 
+}
+/* Fondo oscuro semi-transparente sobre la imagen */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner__content {
+    position: relative;
+    z-index: 2; /* Coloca el contenido por encima del fondo oscuro */
+    max-width: 600px;
+    padding: 20px;
+}
+.banner__titulo {
+    font-size: 40px;
+    margin: 0; /* Quita el margen del título */
+}
+
+.banner__bajada {
+    font-size: 20px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.banner__boton {
+    background-color: $color-enfasis; 
+    border: 2px solid $color-terciario; 
+    color: white;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 32px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner__boton:hover {
+    border-color: #ffffff; 
+}
+
+#banner-index{
+    background-image: url('../assets/img/banner-1.png')
+}
+#banner-equipo{
+    background-image: url('../assets/img/banner-2.png')
+}
+#banner-contacto{
+    background-image: url('../assets/img/banner-contacto.png')
+}
+

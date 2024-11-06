@@ -1,0 +1,12 @@
+//base global
+@use '../styles/variables.scss' as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.body-mio{
+    font-family: $fuente-principal;
+    background-color: $color-principal;
+    margin: 0;
+    padding: 0;
+    list-style: $lista-sin-estilo;
+    box-sizing: border-box;
+}

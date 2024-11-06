@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Prueba</title>
+    <link rel="stylesheet" type="text/css" href="../dist/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+</head>
+<body class="body-mio">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../assets/img/logo-blanco-horizontal.png" alt="Logo hospital" width="231" height="69">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/equipo.html">Equipo médico</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                  </li>
+              </ul>
+              <a href="/pages/contacto.html" class="d-flex">
+              <button type="button" class="btn btn-outline-success btn-custom">Agendar hora</button> 
+              </a>
+          </div>
+      </div>
+  </nav>
+  
+    <section id="banner-index" class="banner">
+        <div class="banner__content">
+            <h1 class="banner__titulo">Bienvenido al Hospital Cordis</h1>
+            <p class="banner__bajada">Cuidando tu salud cardovascular con los mejores especialistas.</p>
+            <a href="/assets/img/banner-1.png" class="banner__boton">Reserva tu hora</a>
+        </div>
+    </section>
+    
+    <section>
+        <div class="mision">
+            <div class="mision__left">
+                <h3 style="text-decoration: underline; text-decoration-color: #64ebb6;">Descubre los servicios que tenemos para ti</h2>
+                <p>TU SALUD CARDIOVASCULAR, NUESTRO COMPROMISO</p>
+            </div>
+            <div class="mision__right">
+                <p>Hospital Cordis es una Institución Médica que provee servicios de consultas médicas, exámenes y cirugías, con tecnología de última generación para cada uno de nuestros servicios, y que cuenta con profesionales altamente calificados y con sólida experiencia y prestigio en el mercado.</p>
+            </div>
+        </div>           
+    </section>
+
+    <div class="tarjetas row row-cols-1 row-cols-md-3 g-4">
+      <!-- Tarjeta 1 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/consultas.png" class="tarjetas__img card-img-top" alt="Consultas">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Consultas</h5>
+            <p class="tarjetas__descripcion card-text">
+              Hospital Cordis cuenta con cómodas y confortables consultas médicas, equipadas con la última tecnología, operada por los mejores profesionales, con la finalidad de otorgarles a nuestros pacientes un servicio de alta calidad profesional.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta 2 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/examenes.png" class="tarjetas__img card-img-top" alt="Exámenes">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Exámenes</h5>
+            <p class="tarjetas__descripcion card-text">
+              Te ofrecemos 22 exámenes especializados para cuidar de tu visión con precisión y tecnología de vanguardia. Desde evaluaciones detalladas hasta pruebas avanzadas, confía en nosotros para mantener salud vascular en su mejor estado.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Tarjeta 3 -->
+      <div class="col">
+        <div class="tarjetas__contenedor card h-100">
+          <img src="/assets/img/cirugias.png" class="tarjetas__img card-img-top" alt="Cirugías">
+          <div class="card-body">
+            <h5 class="tarjetas__titulo card-title">Cirugías</h5>
+            <p class="tarjetas__descripcion card-text">
+              En el Hospital Cordis, las cirugías son seguras y confiables, se realizan con equipos de tecnología de punta, además de que las intervenciones se llevan a cabo con los mejores insumos y en quirófanos de alta calidad.
+            </p>
+            <a href="/pages/contacto.html" class="tarjetas__boton">Agendar hora</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <section>
+        <div class="testimonios">
+            <div class="testimonios__columna">
+                <h2 style="text-decoration: underline; text-decoration-color: #64ebb6;">Nuestros clientes nos avalan</h2>
+                <p>Sus testimonios reflejan nuestro compromiso con la excelencia y la satisfacción del paciente.</p>
+            </div>
+        </div>           
+    </section>
+    <div class="testimonial">
+        <div class="testimonial__item">
+            <img src="../assets/img/Juan.png" alt="Juan González" class="testimonial__img">
+            <h3 class="testimonial__nombre">Juan González</h3>
+            <p class="testimonial__descripcion">"El servicio que recibí fue excelente. El personal es amable y profesional."</p>
+        </div>
+        <div class="testimonial__item">
+            <img src="../assets/img/Ana.png" alt="Ana Rodríguez" class="testimonial__img">
+            <h3 class="testimonial__nombre">Ana Rodríguez</h3>
+            <p class="testimonial__descripcion">"Tuve una experiencia maravillosa en el hospital, con tecnología de primera."</p>
+        </div>
+        <div class="testimonial__item">
+            <img src="../assets/img/Carlos.png" alt="Carlos Muñoz" class="testimonial__img">
+            <h3 class="testimonial__nombre">Carlos Muñoz</h3>
+            <p class="testimonial__descripcion">"El equipo médico fue muy atento y siempre estuve en buenas manos."</p>
+        </div>
+    </div>
+<!-- JavaScript de Bootstrap y dependencias -->
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+<footer>
+   
+        <div class="footer__contenedor">
+          <!-- Logo -->
+          <div class="footer__logo">
+            <a href="index.html"></a>
+            <img src="../assets/img/logo-blanco-vertical.png" alt="Logo">
+          </div>
+      
+          <!-- Enlaces rápidos -->
+          <div class="footer__links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Equipo médico</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <!-- Información de contacto -->
+          <div class="footer__contacto">
+            <h4>Contacto</h4>
+            <p><i class="fa fa-phone"></i> +56 9 1234 5678</p>
+            <p><i class="fa fa-envelope"></i> info@hospitalcordis.cl</p>
+            <p><i class="fa fa-map-marker"></i> Calle Falsa 123, Santiago, Chile</p>
+          </div>
+      
+          <!-- Redes sociales -->
+          <div class="footer__social">
+            <h4>Síguenos</h4>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+    </footer>
+</html>

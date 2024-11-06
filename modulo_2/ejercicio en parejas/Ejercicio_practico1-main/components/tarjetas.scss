@@ -1,0 +1,59 @@
+/*Sección tarjetas*/
+@use '../styles/variables.scss'as *;
+@use '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.tarjetas {
+    //display: flex;
+    //gap: 20px; // Espacio entre las tarjetas
+    //justify-content: center;
+    padding: 40px;    
+    //flex-wrap: wrap; // Permite que las tarjetas se ajusten si no caben en una línea
+  }
+  
+  .tarjetas__contenedor {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    //width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  
+    &:hover {
+      transform: translateY(-10px); // Efecto hover en la tarjeta
+    }
+  }
+  
+  .tarjetas__img {
+    //width: 202px;
+    //height: 202px;
+    object-fit: cover;
+  }
+  
+  .tarjetas__titulo {
+    font-size: 24px;
+    margin: 16px 0 8px;
+    color: $color-enfasis;
+  }
+  
+  .tarjetas__descripcion {
+    font-size: 16px;
+    color: #333;
+    padding: 0 16px 16px;
+  }
+  
+  .tarjetas__boton {
+    background-color: #64ebb6;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block; // Botón centrado
+    margin-bottom: 16px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #1b9ce4;
+    }
+  }
+  
