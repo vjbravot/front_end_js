@@ -1,3 +1,6 @@
+@use 'custom.scss' as *;
+
+
 /* module */
 @use './module/variables.scss' as *;
 @use './module/mixins.scss' as *;
@@ -12,4 +15,3 @@
 @use './components/post.scss' as *;
 @use './components/banner.scss' as *;
 
-@use 'custom.scss' as *;

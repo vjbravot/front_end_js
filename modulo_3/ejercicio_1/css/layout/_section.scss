@@ -2,7 +2,6 @@
 @use '../module/mixins' as *;
 
 .section{
-    margin-top: 50px;
     &__title{
         text-align: center;
         margin-bottom: 50px;
@@ -22,6 +21,6 @@
     @include secondary-text;
 }
 
-.spaceforlogo{
-   height: 260px;
+.main{
+    margin-top: 260px;
 }

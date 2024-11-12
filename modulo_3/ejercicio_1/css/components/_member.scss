@@ -4,7 +4,17 @@
     text-align: center;
     &__img {
         max-width: 250px;
-        
+        display:flex;
+        justify-content: center;
+    background-color: $primary-color;
     }
 
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary-color;
+    color: white
 }
