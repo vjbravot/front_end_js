@@ -1,0 +1,13 @@
+@use '../module/variables.scss' as *;
+.banner{
+    position: fixed;
+    top:0px;
+    left:0px;
+    background-color: white;
+    width: 100%;
+    justify-content: center;
+    
+    .navbar{
+        width: 90%;
+    }
+}

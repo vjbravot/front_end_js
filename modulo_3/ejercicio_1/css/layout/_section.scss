@@ -1,0 +1,27 @@
+@use '../module/variables' as *;
+@use '../module/mixins' as *;
+
+.section{
+    margin-top: 50px;
+    &__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__text{
+        text-align: justify;
+    }
+    &__title{
+        @include important-text;
+
+    }
+    
+}
+
+.team__name{
+    text-align: center;
+    @include secondary-text;
+}
+
+.spaceforlogo{
+   height: 260px;
+}

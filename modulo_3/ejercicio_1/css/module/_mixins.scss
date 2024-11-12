@@ -1,0 +1,13 @@
+@use 'variables' as *;
+
+@mixin important-text{
+    color: $primary-color;
+    font-size:36px;
+    text-align: center;
+}
+
+@mixin secondary-text{
+    color: $secondary-color;
+    font-size: 24px;
+    text-align: center;
+}
