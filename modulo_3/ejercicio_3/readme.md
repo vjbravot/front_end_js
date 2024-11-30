@@ -22,3 +22,12 @@ A few validations of data type are added in the code
 
 Now testimonies are shown on a loop: 
 -Instead of using a loop I used the % function to show testimonies without errors. Please check testimonies.js
+
+
+
+//Notes new lab
+Added json docs for services and doctors
+Added functions to manage doctors, appointments and the patient queue
+Mixed html + json objects to dinamically show doctors in the website
+Added search O(n) (each element is reviewed once in the worst case scenario)
+Added sorting O(n log n) compares each element with its neighboor to check which one has more experience.
