@@ -1,0 +1,12 @@
+@use '../module/variables' as *;
+@use '../module/mixins' as *;
+
+.post{
+    &__img{
+        max-width: 300px;
+        text-align: center;
+    }
+    &__title{
+        @include secondary-text;
+    }
+}

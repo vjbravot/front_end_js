@@ -1,0 +1,17 @@
+@use 'custom.scss' as *;
+
+
+/* module */
+@use './module/variables.scss' as *;
+@use './module/mixins.scss' as *;
+/*  layout */
+@use './layout/header.scss' as *;
+@use './layout/section.scss' as *;
+@use './layout/footer.scss' as *;
+
+/*  components */
+@use './components/member.scss' as *;
+@use './components/testimony.scss' as *;
+@use './components/post.scss' as *;
+@use './components/banner.scss' as *;
+

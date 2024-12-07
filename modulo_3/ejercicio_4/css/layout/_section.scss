@@ -1,0 +1,26 @@
+@use '../module/variables' as *;
+@use '../module/mixins' as *;
+
+.section{
+    &__title{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__text{
+        text-align: justify;
+    }
+    &__title{
+        @include important-text;
+
+    }
+    
+}
+
+.team__name{
+    text-align: center;
+    @include secondary-text;
+}
+
+.main{
+    margin-top: 260px;
+}
