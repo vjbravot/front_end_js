@@ -1,0 +1,27 @@
+@use '../module/variables' as *;
+
+.member {
+    text-align: center;
+    &__img {
+        max-width: 250px;
+        display:flex;
+        justify-content: center;
+    background-color: $primary-color;
+    }
+
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: $primary-color;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

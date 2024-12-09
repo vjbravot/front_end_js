@@ -1,0 +1,125 @@
+{"doctors": [ 
+    {   "id": 0,
+        "name": "Dr. Cristobal Teuber",
+        "title": "Director Médico",
+        "years_of_experience": 10,
+        "image": "img/team/director_1.png",
+        "certifications": [
+          {
+            "name": "Médico Cirujano",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {
+            "name": "Radiología",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {"name": "Abdominal Imaging",
+        "institution": "Mallinckrodt Institute of Radiology"}
+        ]
+      },
+    {   "id": 1,
+        "name": "Dr. Carlos Villarroel",
+        "title": "Director Médico",
+        "years_of_experience": 8,
+        "image": "img/team/director_2.png",
+        "certifications": [
+          {
+            "name": "Médico Cirujano",
+            "institution": "Universidad de La Frontera"
+          },
+          {
+            "name": "Radiología",
+            "institution": "Universidad de Chile"
+          },
+          {"name": "Diplomado Gestión en Imagenología",
+        "institution": "Universidad de Chile"}
+        ]
+      },
+      { "id": 2,
+        "name": "Dr. Roberto Marileo",
+        "title": "Médico",
+        "years_of_experience": 6,
+        "image": "img/team/medico_1.png",
+        "certifications": [
+          {
+            "name": "Médico Cirujano",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {
+            "name": "Radiología",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {"name": "  Especialización en Neurorradiología Diagnóstica",
+        "institution": "Instituto de neurocirugía Dr. Asenjo"}
+        ]
+      },
+      { "id": 3,
+        "name": "Dr. Mario Cabezón",
+        "title": "Médico",
+        "years_of_experience": "5 years",
+        "image": "img/team/medico_2.png",
+        "certifications": [
+          {
+            "name": "Médico Cirujano",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {
+            "name": "Radiología",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {
+            "name": "Especialización en Radiología Musculoesquelética",
+            "institution": "P. Universidad Católica de Chile"
+          }
+        ]
+      },
+      { "id": 4,
+        "name": "Dra. Elizabeth Prado",
+        "title": "Médico",
+        "years_of_experience": 3,
+        "image": "img/team/medico_3.png",
+        "certifications": [
+          {
+            "name": "Médico Cirujano",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {
+            "name": "Radiología",
+            "institution": "P. Universidad Católica de Chile"
+          },
+          {"name": "Abdominal Imaging",
+        "institution": "Mallinckrodt Institute of Radiology"}
+        ]
+      },
+      { "id": 5,
+        "name": "Dr. Carlos Cisternas",
+        "title": "Tecnólogo Médico Jefe",
+        "years_of_experience": 6,
+        "image": "img/team/tecnologo_1.png",
+        "certifications": [
+          {
+            "name": "Tecnólogo Médico con Especialidad en Radiología y Física Médica",
+            "institution": "Universidad de Tarapacá"
+          },
+          {
+            "name": "Magister en Educación Superior",
+            "institution": "Universidad Andrés Bello"
+          },
+          {"name": "  Diplomado en Resonancia Magnética",
+        "institution": "Universidad Central"}
+        ]
+      },
+      { "id": 6,
+        "name": "Dr. Marcelo Borg",
+        "title": "Tecnólogo Médico",
+        "years_of_experience": 4,
+        "image": "img/team/tecnologo_2.png",
+        "certifications": [
+          {
+            "name": "Tecnólogo Médico con mención en Imagenología y Física Médica",
+            "institution": "Universidad San Sebastián"
+          }
+        ]
+      }
+  ]
+}

@@ -1,0 +1,15 @@
+@use '../module/variables.scss' as *;
+@use '../module/mixins.scss' as *;
+
+.title{
+    @include important-text;
+}
+
+.bottom{
+    text-align: center;
+}
+
+.footer{ 
+    margin-inline: auto; 
+    width: fit-content;
+}
