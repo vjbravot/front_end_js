@@ -1,4 +1,19 @@
-
+fetch('./testimonies.json')
+  .then(response => {
+    if (response.ok) {
+      return response.json(); // Return the parsed JSON
+    } else {
+      throw new Error('Failed to fetch data'); // Handle non-OK responses
+    }
+  })
+  .then(data => {
+    dataTestimonies = data; // Assign the resolved JSON data to `dataDoctors`
+    modifyTestimoniesHtml(Object.values(dataDoctors.doctors));
+    console.log('Loaded data:', dataDoctors); // Log the loaded data
+  })
+  .catch(error => {
+    console.error('Error:', error); // Handle errors
+  });
 var data = [{"name": "María G.",
 "text": "La atención en el Centro Sinapsis fue excepcional. Desde mi primera consulta hasta la rehabilitación, me sentí apoyada en cada paso. Gracias a su equipo, hoy disfruto de una vida más saludable."},
 {"name": "José L.", 
