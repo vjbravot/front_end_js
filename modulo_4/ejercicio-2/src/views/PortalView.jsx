@@ -3,7 +3,7 @@ import Portal from "../components/Portal.jsx"
 function PortalView() {
     return(
         <div>
-            <h1>Portales en react</h1>
+            <h1>Portales</h1>
             <Portal />
         </div>
     )

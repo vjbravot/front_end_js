@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Service ({ title, description, image}) {
+function Service ({ title, description, image }) {
     return(
         <li>
         <p><b>{title}</b></p>
@@ -11,7 +11,6 @@ function Service ({ title, description, image}) {
 }
 
 Service.propTypes ={
-    id: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired
 }

@@ -9,12 +9,12 @@ function Portal() {
 
     return (
         <div>
-            <h2>Ejemplo de Portal</h2>
+            <h2>Portal en construcción</h2>
             <button onClick={openModal}>Abrir Modal</button>
             {isOpen && (
                 <Modal onClose={closeModal}>
                     <h3>Detalles del Doctor</h3>
-                    <p>Acá puedes agregar comentarios del doctor</p>
+                    <p>Acá podrás encontrar comentarios del doctor</p>
                 </Modal>
             )}
         </div>

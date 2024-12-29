@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import DoctorsList from "./components/DoctorsList.jsx"
 import ServicesList from "./components/ServicesList.jsx"
-import AppointmentForm from "./components/AppointmentForm.jsx"
+import AppointmentView from "./views/AppointmentView.jsx"
 import FocusInput from "./components/FocusInput.jsx"
 import Doctors from "./views/DoctorsView.jsx"
 import PortalView from "./views/PortalView.jsx"
@@ -29,6 +29,7 @@ function App() {
       {currentView === "hoc" && <HocView />}
       {currentView === "optimized" && <OptimizedView />}
       {currentView === "portal" && <PortalView />}
+      {currentView === "appointment" && <AppointmentView appointments={appointments} setAppointments={setAppointments} />}
     </div>
       {/* <AppointmentForm appointments={appointments} setAppointments={setAppointments}/>
       <DoctorsList doctors={doctors} />

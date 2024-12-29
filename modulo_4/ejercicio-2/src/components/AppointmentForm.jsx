@@ -8,6 +8,8 @@ function AppointmentForm({appointments, setAppointments}){
         e.preventDefault(); // Prevents page reload
         const formData = new FormData(e.target); // Get form data
         const data = Object.fromEntries(formData); // Convert to object
+        console.log("adding appointment: ", data)
+        console.log(appointments)
         setAppointments([...appointments, data])
     },[appointments, setAppointments]);
     function handleFocus() {

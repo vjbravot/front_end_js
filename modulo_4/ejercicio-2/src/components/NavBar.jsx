@@ -48,6 +48,13 @@ function Navbar() {
         Portal
       </button>
 
+      <button
+        onClick={() => setCurrentView("appointment")}
+        style={{ fontWeight: currentView === "appointment" ? "bold" : "normal" }}
+      >
+        Reservas
+      </button>
+
     </nav>
 
   );
