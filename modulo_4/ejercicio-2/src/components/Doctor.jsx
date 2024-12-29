@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React from "react"
 
 function Doctor({name, image, years_of_experience, title}){
     return(
@@ -19,4 +20,4 @@ Doctor.propTypes = {
 }
 
 
-export default Doctor
+export default React.memo(Doctor)

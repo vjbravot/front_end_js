@@ -1,9 +1,9 @@
 import { useState } from "react";
-import SocketContext from "./context/SocketContext";
+import SocketContext from "../context/SocketContext";
 
 function SocketForm() {
     const [title, setTitle] = useState("");
-    const { addEcent } = useContext(SocketContext);
+    const { addEvent } = useContext(SocketContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
