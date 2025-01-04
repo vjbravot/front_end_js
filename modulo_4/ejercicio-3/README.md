@@ -1,0 +1,2 @@
+El uso de virtual DOM permite eficiencia ya que permite a la web cargar solo los elementos necesarios de acuerdo al contexto de la interacción actual del usuario.
+Por ejemplo, tras la carga inicial, el Virtual DOM define lo que debe renderizarse y solo envía de vuelta como DOM esos valores (a diferencia del formato de HTML puro donde se debe cargar en todo momento todo el código de la web)
