@@ -4,7 +4,7 @@ const DoctorsContext = createContext();
 
 function DoctorsProvider({ children }) {
   const [doctors, setDoctors] = useState([])
-
+  const [errorMessage, setErrorMessage] = useState("");
   const fetchDoctors = async () => {
     try{
       console.log("calling Doctors");
@@ -18,13 +18,14 @@ function DoctorsProvider({ children }) {
     } catch (error) {
       console.error("Error fetchin services:", error);
       setDoctors([]); // Fallback to an empty array
+      setErrorMessage("Fallo en la carga de doctores, intente nuevamente")
     }
   }
   useEffect(() => {
     fetchDoctors();
   }, []);
     return (
-      <DoctorsContext.Provider value={{ doctors, fetchDoctors}}>
+      <DoctorsContext.Provider value={{ doctors, fetchDoctors, errorMessage}}>
         {children}
       </DoctorsContext.Provider>
     );
