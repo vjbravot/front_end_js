@@ -40,53 +40,53 @@ body {
     justify-content: center;
   }
 
-  .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex; /* Flexbox to center the modal */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensure the modal appears above everything else */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 90%; /* Make it responsive */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: relative;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-  
-  /* Close Button */
-  .modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  /* Fade-in animation for modal */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.9);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  box-sizing: border-box; /* Ensures padding is included in width */
+  position: fixed; /* Keeps the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
+
+/* Navigation list styling */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Centers the nav items horizontally */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation list items */
+.nav-list li {
+  margin: 0 1rem;
+}
+
+/* Links inside the navbar */
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  display: block; /* Ensures full clickable area */
+}
+
+/* Hover effect on links */
+.nav-list a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Adds padding to content below fixed navbar */
+body {
+  padding-top: 3rem; /* Adjust this based on the navbar height */
 }
 
 h1 {
