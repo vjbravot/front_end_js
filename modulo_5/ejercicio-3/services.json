@@ -1,0 +1,20 @@
+[
+    {
+      "id": 0,
+    "title":"Consultas Cardiológicas",
+    "description": "Ofrecemos consultas especializadas con cardiólogos experimentados que evaluarán tu salud cardiovascular, realizarán diagnósticos precisos y diseñarán planes de tratamiento personalizados.",
+    "image": "img/services/cardiologia.png"
+  },
+  {
+    "id": 1,
+    "title": "Urgencias Cardiovasculares",
+    "description": "Nuestro servicio de urgencias está disponible las 24 horas, brindando atención inmediata y de alta calidad para situaciones críticas relacionadas con la salud del Sinapsis.",
+    "image": "img/services/medicina-urgencia.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Especialidades en Cardiología",
+    "description": "Contamos con diversas especialidades, incluyendo electrocardiografía, ecocardiografía y rehabilitación cardíaca, para abordar de manera integral las necesidades de cada paciente.",
+    "image": "img/services/servicio-cardiologia.jpg"
+  }
+  ]
