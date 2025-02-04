@@ -1,5 +1,5 @@
 import { useContext, useState, useEffect } from "react";
-import Doctor from "./Doctor.jsx";
+import Doctor from "./Doctor.tsx";
 import { DoctorsContext } from "../context/DoctorsContext.jsx";
 
 function DoctorsList() {

@@ -1,4 +1,4 @@
-import Service from "./Service.jsx"
+import Service from "./Service.tsx"
 import { useContext } from "react"
 import { ServicesContext } from "../context/ServicesContext.jsx"
 
