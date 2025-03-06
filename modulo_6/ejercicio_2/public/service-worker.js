@@ -18,14 +18,22 @@ self.addEventListener("install", (event) => {
             assets["main.js"], // Pre-cache main JS
             assets["main.css"], // Pre-cache main CSS
           ];
-          return cache.addAll(urlsToCache);
+          
+          // Parallel cache addition
+          return Promise.all(
+            urlsToCache.map((url) => cache.add(url).catch(() => {})) // Fallback gracefully
+          );
         })
-        .catch(() => cache.addAll(STATIC_ASSETS)); // Fallback to static assets
+        .catch(() => {
+          // In case of failure, fall back to static assets
+          return Promise.all(
+            STATIC_ASSETS.map((url) => cache.add(url).catch(() => {}))
+          );
+        });
     })
   );
   self.skipWaiting(); // Activate immediately
 });
-
 
 // Fetch event: Apply caching strategies
 self.addEventListener("fetch", (event) => {
@@ -42,7 +50,8 @@ self.addEventListener("fetch", (event) => {
       caches.match(request).then((cacheResponse) => {
         return cacheResponse || fetch(request).then((networkResponse) => {
           return caches.open(CACHE_NAME).then((cache) => {
-            cache.put(request, networkResponse.clone());
+            // Cache the network response asynchronously
+            cache.put(request, networkResponse.clone()).catch(() => {});
             return networkResponse;
           });
         });
@@ -51,45 +60,37 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Stale-while-revalidate for dynamic API requests
-  if (url.pathname.startsWith("/appointments") || url.pathname.startsWith("/api/doctors")) {
+  // API data caching with stale-while-revalidate strategy
+  if (url.pathname.startsWith("/api/appointments") || url.pathname.startsWith("/api/doctors")) {
     event.respondWith(
-      caches.open(CACHE_NAME).then((cache) =>
-        fetch(request)
-          .then((networkResponse) => {
-            cache.put(request, networkResponse.clone()); // Update cache with fresh data
-            return networkResponse;
-          })
-          .catch(() => caches.match(request)) // Fallback to cache if offline
-      )
-    );
-    return;
-  }
-
-  // Network-first for authentication & user data (no cache fallback)
-  if (url.pathname.startsWith("/login") || url.pathname.startsWith("/api/auth")) {
-    event.respondWith(
-      fetch(request)
-        .then((response) => {
-          // Store the token in IndexedDB after a successful login response
-          if (response.ok) {
-            const clonedResponse = response.clone();
-            clonedResponse.json().then(async (data) => {
-              const token = data.token; // Assuming the token is part of the response
-              await storeTokenInIndexedDB(token);
+      caches.match(event.request).then((cachedResponse) => {
+        // Serve cached response immediately (stale-while-revalidate)
+        if (cachedResponse) {
+          fetch(event.request).then((networkResponse) => {
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, networkResponse.clone()).catch(() => {});
             });
-          }
-          return response;
-        })
-        .catch(() => caches.match(request)) // No cache fallback for security
-    );
-    return;
-  }
+          });
+          return cachedResponse;
+        }
 
-  // Default: Cache-first strategy
-  event.respondWith(
-    caches.match(request).then((cacheResponse) => cacheResponse || fetch(request))
-  );
+        // Fallback to network fetch and cache it for the next time
+        return fetch(event.request)
+          .then((response) => {
+            const clonedResponse = response.clone();
+            clonedResponse.json().then((data) => {
+              // Save data to IndexedDB asynchronously
+              saveToIndexedDB("appointments", { id: url.pathname, data }).catch(() => {});
+            });
+            return response;
+          })
+          .catch(async () => {
+            const cachedData = await getFromIndexedDB("appointments", url.pathname);
+            return cachedData ? new Response(JSON.stringify(cachedData.data)) : new Response(null, { status: 404 });
+          });
+      })
+    );
+  }
 });
 
 // Handle new version notification (NO FORCED RELOAD)
