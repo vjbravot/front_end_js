@@ -1,0 +1,25 @@
+{
+    "name": "Sinapsis",
+    "short_name": "Sinapsis",
+    "description": "A seamless and intelligent PWA for connectivity, productivity, and collaboration.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#007bff",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/assets/icons/logo_192x192.png",
+        "sizes": "192x192",
+        "type": "png"
+      },
+      {
+        "src": "/assets/icons/logo_512x512.png",
+        "sizes": "512x512",
+        "type": "png"
+      }
+    ],
+    "scope": "/",
+    "permissions": [],
+    "lang": "en"
+  }
