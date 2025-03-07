@@ -1,5 +1,5 @@
 [ 
-    {   "id": 0,
+    {   "id": 1,
         "name": "Dr. Cristobal Teuber",
         "title": "Director Médico",
         "specialty": "Radiology",
@@ -18,7 +18,7 @@
         "institution": "Mallinckrodt Institute of Radiology"}
         ]
       },
-    {   "id": 1,
+    {   "id": 2,
         "name": "Dr. Carlos Villarroel",
         "title": "Director Médico",
         "specialty": "Radiology",
@@ -37,7 +37,7 @@
         "institution": "Universidad de Chile"}
         ]
       },
-      { "id": 2,
+      { "id": 3,
         "name": "Dr. Roberto Marileo",
         "title": "Médico",
         "specialty": "Neuro-radiology",
@@ -56,7 +56,7 @@
         "institution": "Instituto de neurocirugía Dr. Asenjo"}
         ]
       },
-      { "id": 3,
+      { "id": 4,
         "name": "Dr. Mario Cabezón",
         "title": "Médico",
         "specialty": "Radiology",
@@ -77,7 +77,7 @@
           }
         ]
       },
-      { "id": 4,
+      { "id": 5,
         "name": "Dra. Elizabeth Prado",
         "title": "Médico",
         "specialty": "Abdominal Imaging",
@@ -96,7 +96,7 @@
         "institution": "Mallinckrodt Institute of Radiology"}
         ]
       },
-      { "id": 5,
+      { "id": 6,
         "name": "Dr. Carlos Cisternas",
         "title": "Tecnólogo Médico Jefe",
         "specialty": "MRI",
@@ -115,7 +115,7 @@
         "institution": "Universidad Central"}
         ]
       },
-      { "id": 6,
+      { "id": 7,
         "name": "Dr. Marcelo Borg",
         "title": "Tecnólogo Médico",
         "specialty": "MRI",
