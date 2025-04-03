@@ -4,13 +4,18 @@
     "display": "Vite React",
     "_version": "3.4.0",
   
-    "compilerOptions": {
-      "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-      "target": "ES2020",
-      "useDefineForClassFields": true,
-      "lib": ["ES2020", "DOM", "DOM.Iterable"],
-      "module": "ESNext",
-      "skipLibCheck": true,
+    
+      "compilerOptions": {
+        "module": "ESNext", // Use ES modules
+        "moduleResolution": "node", // Resolve modules as Node.js does
+        "esModuleInterop": true, // Allow default imports from CommonJS modules
+        "jsx": "react-jsx", // Enable JSX support (for React projects)
+        "target": "ESNext" // Use the latest ECMAScript target
+      },
+      "include": [
+        "src/**/*" // Include your source files for TypeScript compilation
+      ],
+    
   
       /* Bundler mode */
       "moduleResolution": "Bundler",
@@ -27,4 +32,4 @@
       "noFallthroughCasesInSwitch": true,
       "noUncheckedSideEffectImports": true
     }
-  }
+  

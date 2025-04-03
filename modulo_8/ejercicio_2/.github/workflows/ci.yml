@@ -1,0 +1,43 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main # Trigger on push to the main branch
+  pull_request:
+    branches:
+      - main # Trigger on pull requests targeting the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # Use the latest Ubuntu image for the runner
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3 # Checkout your repository code
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16' # Use Node.js version 16 (adjust if needed)
+
+    - name: Install dependencies
+      run: |
+        npm install # Install the dependencies (npm is assumed, use yarn if needed)
+
+    - name: Run Unit Tests
+      run: |
+        npm test # Run the unit tests using Jest (make sure tests are configured in your package.json)
+
+    - name: Build Docker Image
+      run: |
+        docker build -t my-app-image . # Build the Docker image using the Dockerfile in the root directory
+
+    - name: Run Docker Container
+      run: |
+        docker run -d -p 80:80 my-app-image # Run the Docker container to verify if it runs correctly (adjust as needed)
+
+    - name: Run Tests Inside Docker
+      run: |
+        docker exec my-app-container npm test # Run tests inside the Docker container if applicable
+        docker stop my-app-container # Stop the Docker container after tests are done
