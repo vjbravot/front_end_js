@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Web Sinapsis",
+    "description": "Página web del centro médico Sinapsis. Puede utilizarse como PWA, contiene filtros, georreferenciación, api REST, entre otros.",
+    "image": "/img/logo.png",
+    "liveUrl": "pending",
+    "githubUrl": "https://github.com/vjbravot/front_end_js/tree/main/modulo_8/ejercicio_2",
+    "tags": ["React", "Bootstrap", "JWT"]
+  }
+]
